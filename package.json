@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "demo": "ts-node error-handling-demo.ts",
-    "demo:fast": "ts-node --transpile-only error-handling-demo.ts"
+    "demo": "ts-node src/demo.ts",
+    "demo:fast": "ts-node --transpile-only src/demo.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "neverthrow": "^8.2.0"
